@@ -153,7 +153,7 @@ You can customize the citation key format in the configuration file using placeh
 - `{venue}`: Venue/journal name
 - `{doi}`: DOI
 
-Example: `key_format: "{author}-{year}-{veryshorttitle}"` -> `Smith-2023-Attention`
+Example: `key_format: "{author}-{year}-{veryshorttitle}"` -> `Vaswani-2017-Attention`
 
 
 ## Contributor of This Project
