@@ -6,7 +6,7 @@
 
 ![BibTeX Cleaner overview](https://raw.githubusercontent.com/tohoku-nlp/bibtex-cleaning-agent/main/assets/cover.png)
 
-BibTeX Cleaner is an LLM-powered BibTeX cleaning agent and command-line tool that integrates with DBLP, Semantic Scholar, and arXiv to automatically clean, normalize, enrich, and deduplicate BibTeX entries, while optionally standardizing citation keys and conference/journal information.
+BibTeX Cleaner is an LLM-powered BibTeX cleaning agent and command-line tool. It connects to DBLP, Semantic Scholar, and arXiv to fix formatting issues, fill in missing information, standardize fields, remove duplicates, and automatically search for and update a paper’s official publication details. 
 
 ## Features
 
