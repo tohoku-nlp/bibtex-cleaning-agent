@@ -1,0 +1,30 @@
+# BibTeX Cleaner Configuration
+
+# LLM Settings
+model: "gpt-5.1"  # Optional: Specify OpenAI model (default: gpt-4o-mini)
+
+# Processing Settings
+batch_size: 6 # Number of entries to process at once
+delay: 1.0
+retry_count: 3
+# custom_prompt: |  # Optional: Custom system prompt
+#   You are a BibTeX expert. Clean the following entries...
+
+# Feature Flags
+enhance_conferences: false # Set to true to focus on enhancing conference/journal info
+
+# Citation Key Format
+# Available placeholders:
+# - {author}: First author's surname
+# - {year}: Publication year
+# - {title}: Full sanitized title
+# - {shorttitle}: First 3 meaningful words of title (default)
+# - {veryshorttitle}: First 1 meaningful word of title
+# - {mediumtitle}: First 5 meaningful words of title
+# - {venue}: Venue/journal name
+# - {doi}: DOI
+key_format: "{author}{year}{veryshorttitle}" # You can also add em-dash between author and year, e.g., "{author}-{year}-{veryshorttitle}"
+
+# Output Settings
+json: false # Output result as JSON including stats
+output: "cleaned.bib" # Default output file if not specified in CLI
