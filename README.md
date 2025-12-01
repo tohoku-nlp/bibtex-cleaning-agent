@@ -1,4 +1,4 @@
-## BibTeX Cleaner
+## BibTeX Cleaning Agent
 
 [![PyPI version](https://badge.fury.io/py/bibtex-cleaner.svg)](https://badge.fury.io/py/bibtex-cleaner)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
