@@ -16,7 +16,7 @@ BibTeX Cleaner is an LLM-powered BibTeX cleaning agent and command-line tool tha
 
 ## Installation
 
-You can install the package via pip (or uv):
+You can install the package via pip or uv:
 
 ```bash
 pip install bibtex-cleaner
@@ -24,15 +24,43 @@ pip install bibtex-cleaner
 uv pip install bibtex-cleaner
 ```
 
-## Environment Variables
+## API Key and Environment Variables
 
-You need to create a `.env` file in your project root with your API key first:
+BibTeX Cleaner uses the `OPENAI_API_KEY` environment variable. There are two common ways to set it:
 
-```bash
-OPENAI_API_KEY=your_api_key_here
-```
+- **Using a `.env` file** (recommended for per-project setup):
+
+  Create a `.env` file in your LaTeX project root (where your `.bib` file lives):
+
+  ```bash
+  echo 'OPENAI_API_KEY=your_api_key_here' > .env
+  ```
+
+  The CLI automatically loads `.env` when you run `bib-cleaner`.
+
+- **Using a shell environment variable**:
+
+  ```bash
+  export OPENAI_API_KEY=your_api_key_here
+  # or one-shot:
+  OPENAI_API_KEY=your_api_key_here bib-cleaner input.bib output.bib
+  ```
 
 ## Usage
+
+### Typical Workflow
+
+- **From your LaTeX project root** (where `myrefs.bib` is located):
+
+  ```bash
+  bib-cleaner myrefs.bib cleaned_myrefs.bib
+  ```
+
+- **With default output from config** (see below), you can omit the output path:
+
+  ```bash
+  bib-cleaner myrefs.bib
+  ```
 
 ### Basic Cleaning
 
@@ -44,7 +72,24 @@ bib-cleaner input.bib output.bib
 
 ### Configuration
 
-The tool uses a `bibtex_cleaner_config.yaml` file for configuration. You can specify a custom config path with the `--config` flag.
+The tool uses a `bibtex_cleaner_config.yaml` file for configuration. By default, it looks for this file in the current working directory, but you can also specify a custom path with the `--config` flag.
+
+- **Create a config file in your LaTeX project** (recommended):
+
+  - In the same directory as your `.bib` file, create `bibtex_cleaner_config.yaml`.
+  - Either:
+    - Copy the example below into that file, or
+    - Copy the template from the GitHub repository (`bibtex_cleaner_config.yaml` in the project root).
+
+- **Run the cleaner with your config**:
+
+  ```bash
+  # Uses bibtex_cleaner_config.yaml in the current directory
+  bib-cleaner myrefs.bib cleaned_myrefs.bib
+
+  # Or specify a custom config path explicitly
+  bib-cleaner myrefs.bib cleaned_myrefs.bib --config path/to/bibtex_cleaner_config.yaml
+  ```
 
 Example `bibtex_cleaner_config.yaml`:
 
