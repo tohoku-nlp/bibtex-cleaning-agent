@@ -1,5 +1,9 @@
 ## BibTeX Cleaner
 
+[![PyPI version](https://badge.fury.io/py/bibtex-cleaner.svg)](https://badge.fury.io/py/bibtex-cleaner)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/release/python-3120/)
+
 ![BibTeX Cleaner overview](https://raw.githubusercontent.com/tohoku-nlp/bibtex-cleaning-agent/main/assets/cover.png)
 
 BibTeX Cleaner is an LLM-powered BibTeX cleaning agent and command-line tool that integrates with DBLP, Semantic Scholar, and arXiv to automatically clean, normalize, enrich, and deduplicate BibTeX entries, while optionally standardizing citation keys and conference/journal information.
