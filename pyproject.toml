@@ -1,6 +1,6 @@
 [project]
 name = "bibtex-cleaner"
-version = "0.1.0"
+version = "0.1.1"
 description = "LLM-powered BibTeX cleaner"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -40,7 +40,7 @@ Repository = "https://github.com/tohoku-nlp/bibtex-cleaning-agent"
 Issues = "https://github.com/tohoku-nlp/bibtex-cleaning-agent/issues"
 
 [project.scripts]
-bib-cleaner = "bibtex_cleaner.cli:main"
+bibtex-cleaner = "bibtex_cleaner.cli:main"
 
 [build-system]
 requires = ["hatchling"]

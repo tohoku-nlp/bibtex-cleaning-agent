@@ -36,14 +36,14 @@ BibTeX Cleaner uses the `OPENAI_API_KEY` environment variable. There are two com
   echo 'OPENAI_API_KEY=your_api_key_here' > .env
   ```
 
-  The CLI automatically loads `.env` when you run `bib-cleaner`.
+  The CLI automatically loads `.env` when you run `bibtex-cleaner`.
 
 - **Using a shell environment variable**:
 
   ```bash
   export OPENAI_API_KEY=your_api_key_here
   # or one-shot:
-  OPENAI_API_KEY=your_api_key_here bib-cleaner input.bib output.bib
+  OPENAI_API_KEY=your_api_key_here bibtex-cleaner input.bib output.bib
   ```
 
 ## Usage
@@ -53,13 +53,13 @@ BibTeX Cleaner uses the `OPENAI_API_KEY` environment variable. There are two com
 - **From your LaTeX project root** (where `myrefs.bib` is located):
 
   ```bash
-  bib-cleaner myrefs.bib cleaned_myrefs.bib
+  bibtex-cleaner myrefs.bib cleaned_myrefs.bib
   ```
 
 - **With default output from config** (see below), you can omit the output path:
 
   ```bash
-  bib-cleaner myrefs.bib
+  bibtex-cleaner myrefs.bib
   ```
 
 ### Basic Cleaning
@@ -67,7 +67,7 @@ BibTeX Cleaner uses the `OPENAI_API_KEY` environment variable. There are two com
 Clean a BibTeX file using default settings:
 
 ```bash
-bib-cleaner input.bib output.bib
+bibtex-cleaner input.bib output.bib
 ```
 
 ### Configuration
@@ -85,10 +85,10 @@ The tool uses a `bibtex_cleaner_config.yaml` file for configuration. By default,
 
   ```bash
   # Uses bibtex_cleaner_config.yaml in the current directory
-  bib-cleaner myrefs.bib cleaned_myrefs.bib
+  bibtex-cleaner myrefs.bib cleaned_myrefs.bib
 
   # Or specify a custom config path explicitly
-  bib-cleaner myrefs.bib cleaned_myrefs.bib --config path/to/bibtex_cleaner_config.yaml
+  bibtex-cleaner myrefs.bib cleaned_myrefs.bib --config path/to/bibtex_cleaner_config.yaml
   ```
 
 Example `bibtex_cleaner_config.yaml`:
@@ -116,7 +116,7 @@ output: "cleaned.bib"
 ### CLI Options
 
 ```bash
-bib-cleaner input.bib [output.bib] [--config path/to/config.yaml]
+bibtex-cleaner input.bib [output.bib] [--config path/to/config.yaml]
 ```
 
 ### Key Mapping JSON Output

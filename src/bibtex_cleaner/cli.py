@@ -46,7 +46,7 @@ def run_cleaner(
     else:
         if sys.stdin.isatty():
             print(
-                "Error: No input provided. Usage: bib-cleaner <input_file> or cat input.bib | bib-cleaner",
+                "Error: No input provided. Usage: bibtex-cleaner <input_file> or cat input.bib | bibtex-cleaner",
                 file=sys.stderr,
             )
             sys.exit(1)
