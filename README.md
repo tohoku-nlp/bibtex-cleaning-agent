@@ -157,6 +157,6 @@ Example: `key_format: "{author}-{year}-{veryshorttitle}"` -> `Vaswani-2017-Atten
 
 
 ## Contributor of This Project
-This idea was born from discussions between Kai Kamijo, [Mengyu Ye](https://muyo8692.com/), [Ryosuke Takahashi](https://r-takahashi.webflow.io/), and Taïga Gonçalves (in alphabetical order).
+This idea was born from discussions between Kai Kamijo, [Mengyu Ye](https://muyo8692.com/), [Ryosuke Takahashi](https://r-takahashi.webflow.io/), and [Taïga Gonçalves](https://tgoncalv.github.io/) (in alphabetical order).
 
 [Ryosuke Takahashi](https://r-takahashi.webflow.io/) implemented the core LangChain-based cleaning pipeline, and Taïga Gonçalves developed the initial conference-metadata resolver prototype. [Mengyu Ye](https://muyo8692.com/) refactored and streamlined these components, added parallel cleaning support, integrated them into a unified Python package, and finalized the current release.
