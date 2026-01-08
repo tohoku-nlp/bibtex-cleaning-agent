@@ -48,8 +48,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build]
 sources = ["src"]
-[tool.hatch.build.targets.wheel]
-packages = ["bibtex_cleaner"]
 
 [dependency-groups]
 dev = [
